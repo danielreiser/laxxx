@@ -262,7 +262,7 @@ You can then access this preset like this:
 Lots of transform functions are already part of lax.js. However, in case you need some other transform you can easily extend the list of transform functions:
 Suppose you've got a div and want to only animate its backdrop-filter blur value
 ```javascript
-lax.addTransformFn("data-lax-backdrop-blur", (style, v) => { style.filter += `backdrop-filter(${v}px)` });
+lax.addTransformFn("data-lax-backdrop-blur", (style, v) => { style.backdropFilter += `blur(${v}px)` });
 ```
 
 ## Performance Tips
